@@ -248,9 +248,9 @@
         <h1>🎡 Lykkehjul</h1>
         
         <div class="input-section">
-            <label for="names">Legg inn navn (ett navn per linje):</label>
-            <textarea id="names" placeholder="Ola&#10;Kari&#10;Per&#10;Anne"></textarea>
-            <p class="hint">Skriv ett navn per linje</p>
+            <label for="names">Legg inn deck (ett deck per linje):</label>
+            <textarea id="names" placeholder="Golos&#10;Ob Nix&#10;Heliod&#10;Chainer"></textarea>
+            <p class="hint">Skriv ett deck per linje</p>
         </div>
         
         <div class="wheel-container">
@@ -367,7 +367,7 @@
             const names = getNames();
             
             if (names.length === 0) {
-                alert('Vennligst legg til minst ett navn!');
+                alert('Vennligst legg til minst ett deck!');
                 return;
             }
             
@@ -420,7 +420,7 @@
         
         document.getElementById('names').addEventListener('input', drawWheel);
         
-        document.getElementById('names').value = 'Ola\nKari\nPer\nAnne\nLars\nEva';
+        document.getElementById('names').value = 'Necro\nNiv\nFleem\nRakdos\nHeliod\nGolos';
         drawWheel();
     </script>
 </body>
